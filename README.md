@@ -1,10 +1,2 @@
-# boilerplate-auth-react-redux
+#ONEROOF
 
-A boilder plate for a react web app with a redux global store
-
-## Tech used:
-- React
-- Redux
-- Thunk
-- Express
-- Webpack

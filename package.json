@@ -1,24 +1,11 @@
 {
-  "name": "boilerplate-react-redux",
+  "name": "oneroof",
   "version": "0.1.0",
-  "description": "a boilerplate for react web app using global store",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Boyd-Thurston/boilerplate-react-redux.git"
-  },
-  "keywords": [
-    "boilderplate",
-    "react",
-    "redux",
-    "authorisation"
-  ],
-  "author": "Boyd Thurston",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Boyd-Thurston/boilerplate-react-redux/issues"
-  },
-  "homepage": "https://github.com/Boyd-Thurston/boilerplate-react-redux#readme",
+  "description": "reppin the roof",
+  "repository": "https://github.com/kimhartley/oneRoof.git",
+  "main": "server/index.js",
+  "author": "Ninja Steps",
+  "license": "ISC",  
   "scripts": {
     "build": "webpack",
     "server": "node server",
