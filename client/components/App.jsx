@@ -1,17 +1,43 @@
-// import external modules
 import React from 'react'
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { fetchArtists } from '../actions/artists'
 
-// local imports
+import Artist from './Artist'
+import player from './player'
+import artistsPage from './artistsPage'
 
-// define class component 
 export class App extends React.Component {
-  render(){
-    return(
-      <>
-        <h1>Development has begun</h1>
-        <h2>Behold I am the App component</h2>
-      </>
+
+  componentDidMount() {
+    this.props.dispatch(fetchArtists())
+  }
+
+  render() {
+
+    return (
+      <Router>
+
+        <div >
+
+          <div>
+
+            <Link to='/'>
+              <img className="card-img" src="/logo.jpg"></img>
+            </Link>
+
+          </div>
+
+          <div className="screen">
+
+            <Route exact path="/:name" component={Artist} />
+            <Route exact path="/player" component={player} />
+            <Route exact path="/" component={artistsPage} />
+
+          </div>
+
+        </div>
+      </Router>
     )
   }
 }

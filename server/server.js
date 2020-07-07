@@ -2,12 +2,14 @@
 const path = require('path')
 const express = require('express')
 
-// define server
+const artistRoutes = require('./routes/artistRoutes')
+
 const server = express()
 
 // add middleware
 server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
-// export server
+server.use('/api/v1/artists', artistRoutes)
+
 module.exports = server
