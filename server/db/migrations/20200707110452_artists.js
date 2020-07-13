@@ -7,8 +7,8 @@ exports.up = knex => {
       table.string('audio')
     })
   
-  }
+}
   
-  exports.down = knex => {
+exports.down = knex => {
     return knex.schema.dropTable('artists')
-  }
+}

@@ -21,7 +21,7 @@ class artistsPage extends React.Component {
                             margin: "10px",
                             padding: "5px"
                         }}>
-                                <img src={artist.image} />
+                                <img className="card-img" src={artist.image} />
                                 <Link to={`/${artist.name}`}>{artist.name}</Link>
                             </ul>
 

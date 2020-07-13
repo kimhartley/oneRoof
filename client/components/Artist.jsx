@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import AudioPlayer from 'react-h5-audio-player';
 
 export function artist(props) {
     
@@ -24,10 +24,9 @@ export function artist(props) {
                                 <h2>{artist.name}</h2>
                                 <div>
                                     Bio: {artist.bio}
-                                    <br/>
-                                    Audio: {artist.audio}
-                                    <br/>
-                                    <a>{artist.website}</a>
+                                    <br></br>
+                                    <AudioPlayer src={artist.audio} />
+                                    
                                 </div>
                             </div>
                         </ul>

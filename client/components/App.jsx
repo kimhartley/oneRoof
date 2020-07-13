@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { fetchArtists } from '../actions/artists'
 
 import Artist from './Artist'
-import player from './player'
+import Player from './Player'
 import artistsPage from './artistsPage'
 
 export class App extends React.Component {
@@ -23,7 +23,7 @@ export class App extends React.Component {
           <div>
 
             <Link to='/'>
-              <img className="card-img" src="/logo.jpg"></img>
+              <img className="header-img" src="/logo.jpg"></img>
             </Link>
 
           </div>
@@ -31,9 +31,8 @@ export class App extends React.Component {
           <div className="screen">
 
             <Route exact path="/:name" component={Artist} />
-            <Route exact path="/player" component={player} />
             <Route exact path="/" component={artistsPage} />
-
+            {/* <Route exact path="/:name" component={Player} /> */}
           </div>
 
         </div>

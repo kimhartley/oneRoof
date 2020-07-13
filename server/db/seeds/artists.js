@@ -7,9 +7,9 @@ exports.seed = function (knex) {
         {
           id: 1, 
           name: 'Ash Broke',
-          image: '',
-          bio: '',
-          audio: ''
+          image: 'https://i1.sndcdn.com/avatars-000671134043-0ebpuv-t500x500.jpg',
+          bio: 'I go by the name of ASH BROKE, I represent ONEROOF. My music is basically stories of my life and is a way for me to talk about things I couldn\'t talk about in conversation, it is my type of self-therapy.',
+          audio: '/music/Girl (INSTUMENTAL MSTR).wav;take it back ref.mp3', 
         },
         {
           id: 2, 

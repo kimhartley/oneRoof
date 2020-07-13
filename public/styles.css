@@ -28,7 +28,9 @@
     align-items:top;
     font-size:2vw
 }
-
+.header-img {
+    width:25%;
+}
 .card {
     justify-content: center;
     background-color:#101010;
@@ -40,7 +42,7 @@
 }
 
 .card-img {
-    width:20%;    
+    width:100%;    
 }
 
 .screen {
